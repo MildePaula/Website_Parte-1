@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/*Configuração geral do body*/
+body {
+    margin: 0;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #7D1765;
+}
+
+/*Configuração do header cabeçalho*/
+header {
+    background-color: #121D52;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;      
+}
+
+.logo-container{ /*Configuração da logo através de um container dentro do container header*/
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img{
+    margin-right: 0%;
+}
+
+.logo-name {
+    font-size: 18px;
+    color: #eee;
+    margin-left: 0%;  
+}
+
+nav{
+    display: flex;
+}
+
+header nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration:none;
+    color: aqua;
+}
+
+main{
+    padding: 0%; 
+
+}
+
+/* Primeira section: principal com a imagem_início, título e subtítulo*/  
+section{
+    padding: 10px;
+}
+#principal {
+    background: url('imagens/primeira_page.jpg') center/cover; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Centralizar verticalmente*/
+}
+
+#principal h1 {
+    font-size: 60px; color:#7D1765;
+    margin-top: 50px;
+    margin-bottom: 100px;    
+}
+
+#principal h2 {
+    font-size: 20px; color: #7D1765;
+    margin-bottom: 50px;
+}
+
+#principal img {
+    width: 300;
+    height: 500; 
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */   
+}
+
+/*Segunda section: cadastro*/
+#cadastro {
+    height: 600px;
+    width: 96.8%;
+    background-color: #121D52;
+    padding: 20px;      
+}
+
+.cadastro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.image-wrapper {
+    flex: 1; /* A imagem ocupará 1 parte do espaço disponível */
+    margin-right: 20px; /* Separar as imagens */
+}
+
+.text-wrapper {
+    flex: 2; /* O texto ocupará 2 partes do espaço disponível */
+    color: #eee;
+    margin-bottom: 10%; 
+}
+
+.text-wrapper p {
+    padding-top: 70px;
+    margin-bottom: -2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-wrapper .online{
+    font-weight: bold;
+    color: #1b35bc;
+}
+
+.botao-link {
+    padding: 10px 30px;
+    background-color: #121D52;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    filter: brightness(1.5);
+}
+
+.botao-link:hover {
+    filter: brightness(5);
+}
+
+/*Inicio da terceira section: aulas */
+#aulas h1{
+    color:#121D52;
+    margin-bottom: 5%;
+    font-size: 30px;
+}
+
+#aulas{
+    background-color: #a77a9d;
+    padding: 20px;
+}
+
+/*Terceira section com os botões*/
+.expansivel {
+    display: none; /* Esconde o checkbox padrão */    
+}
+
+.expansivel+label.expansivel-label {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    width: 25%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.expansivel+label.expansivel-label:hover {
+    background-color: #e6cbcb;
+}
+
+.expansivel:checked+label.expansivel-label {
+    background-color: #ddd;
+}
+
+.expansivel+label.expansivel-label span { /*Alterar os textos dentro do label (pron, voc,cov)*/
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 0 auto; /* Centraliza horizontalmente o texto dentro do label pron, voc, conv. */
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 25%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.expansivel:checked+label.expansivel-label+.content {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+.expansivel:checked+label.expansivel-label+.content p {
+    color: #eee;
+}
+
+/*Section: endereço - imagem, mapa e parágrafo*/
+#endereco{
+    background-color: #121D52;
+}
+#endereco h1{
+    font-size: 30px;
+    color: #eee;
+    margin-top: 100px;
+    margin-bottom: 95px;
+}
+
+.imagem-mapa-container section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-wrapper {
+    margin-right: 20px; 
+}
+
+.image-wrapper img,
+.image-wrapper iframe {
+    width: 400px;
+    height: 250px;
+}
+
+#presencial{
+    color: #eee;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#presencial .encontros {
+    color:#1b35bc;
+    font-weight: bold;
+}
+
+#presencial .sabado {
+    color: #1b35bc;
+    font-weight: bold;
+}
+
+
+.formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:white;
+}
+
+#form-titulo {
+    text-align: center;
+    color: #121D52;
+}
+
+.form-paragrafo {
+    color: #121D52;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #121D52;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: #121D52;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 10px;
+    color: #121D52;
+}
+
+input[type="submit"] {
+    background-color: #121D52;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1A2E6D;
+}
+
+/* Section: Instrutora */
+.apresentacao{
+    color: #eee;
+}
+
+#instrutora {
+    height: 100px;
+    width: 96.8%;
+    background-color: #7D1765;
+    padding: 20px;
+}
+
+.instrutora-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instrutora-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.apresentacao-wrapper {
+    flex: 2;
+    color: #eee;
+}
+
+.apresentacao-wrapper p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    
+}
+
+.box_model{
+    height: 350px;
+    width: 350px;
+    
+    border-width: 10px;
+    border-style:groove;
+    border-color: rgb(115, 106, 183);
+    border-radius: 50%;
+    
+    background-image: url(instrutora.png);
+    text-align:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outline-width: 5px;
+    outline-style:double;
+    outline-color: rgb(194, 182, 240);
+    margin-top: 10px;
+}
+    
+/* Section: Projeto */
+.projeto {
+    color: #eee;
+}
+
+#descricao {
+    height: 300px;
+    width: 96.8%;
+    background-color: #7D1765;
+    padding: 20px;
+}
+
+.descricao-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.descricao-wrapper {
+    flex: 2;
+    color: #eee;
+}
+
+.descricao-wrapper p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.voce {
+    font-weight: bold;
+    color: #121D52;
+    font-size: 20px;
+}
+
+
+/* Section: Contato */
+#duvidas {
+    height: 300px;
+    width: 96.8%;
+    background-color: #7D1765;
+    padding: 20px;
+}
+
+.duvidas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.duvidas-wrapper {
+    flex: 2;
+    color: #eee;
+}
+
+.duvidas-wrapper p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.duvidas-wrapper a{
+    color: #121D52;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.rodape {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+}

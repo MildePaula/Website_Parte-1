@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Customização da imagem-->
+    <link rel="shortcut icon" href="imagens/techish.ico" type="image/x-icon">
+</head>
+<body>
+    <header> 
+            <div class="logo-container">
+                <img src="imagens/sublogo.png" alt="Logo Techish Academy" width="150px" height="auto">
+                <div class="logo-name">Techish Academy</div>
+            </div>
+        
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="instrutora.html">Instrutora</a>
+            <a href="projeto.html">Projeto</a>
+            <a href="contato.html">Contato</a>
+        </nav>   
+    </header>  
+    <main>
+        <!--Primeira section-->
+        <section id="principal">
+            <h1>English for DEVs</h1> 
+            <h2>Aulas de inglês para quem AMA tecnologia!!!!</h2>
+        </section>
+
+        <!--Segunda section-->
+        <section id="cadastro" class="cadastro-container">
+            <div class="image-wrapper">
+                <img src="imagens/ideas_into_reality.jpg" alt="Imagem" width="250px">
+            </div>
+
+            <div class="text-wrapper">
+                <pre>
+                <p>Você é apaixonado por tecnologia e interessado em aprimorar suas habilidades
+                    de comunicação em inglês? Junte-se às nossas aulas <span class="online">online</span>!</p>
+                <P>VAGAS LIMITADAS!</P>
+                </pre>
+                <!-- Cadastro/Formulário; adicionar uma classe para diferenciar dos outros botões -->
+                <a href="form.html" class="botao-link">CADASTRO</a><!-- Popup de enviado -->
+                
+                <pre>
+                <p>Aprimore sua proficiência na língua inglesa enquanto mergulha no mundo da tecnologia.</p> 
+                </pre>
+            </div>
+            </section>
+
+        <!--Terceira section: botões expansíveis-->
+        <section id="aulas">
+            <h1>Nossas aulas</h1>
+        
+        <!--<section botões expansíveis> -->
+            <input type="checkbox" id="pronuncia-toggle" class="expansivel">
+            <label for="pronuncia-toggle" class="expansivel-label"><span>PRONÚNCIA</span></label>
+            <div class="content">
+                <section>
+                    <img src="imagens/pronuncia.jpg" alt="Imagem Pronúncia" width="250px">
+                    <p>Esta sessão é especificamente projetada para ajudar entusiastas de tecnologia,
+                    profissionais e aprendizes a aprimorarem
+                    suas habilidades de pronúncia em inglês para interações
+                    fluidas e impactantes dentro do domínio da tecnologia.</p>
+                </section>
+            </div>
+
+            <input type="checkbox" id="vocabulario-toggle" class="expansivel">
+            <label for="vocabulario-toggle" class="expansivel-label"><span>VOCABULÁRIO</span></label>
+            <div class="content">
+                <section>
+                    <img src="imagens/vocabulario.jpg" alt="Imagem Vocabulário" width="250px">
+                    <p>Junte-se a nós nesta sessão para explorar estratégias de expansão do seu
+                    vocabulário específico em tecnologia e elevar
+                    suas habilidades de comunicação.</p>
+                </section>
+            </div>
+        
+            <input type="checkbox" id="conversacao-toggle" class="expansivel">
+            <label for="conversacao-toggle" class="expansivel-label"><span>CONVERSAÇÃO</span></label>
+            <div class="content">
+                <section>
+                    <img src="imagens/conversacao.jpg" alt="Imagem Conversação" width="250px">
+                    <p>Esta sessão foi elaborada para melhorar as suas habilidades necessárias
+                    para participar de conversas impactantes e
+                    produtivas dentro do ecossistema dinâmico da tecnologia.</p>
+                </section>
+            </div>
+        </section>
+        
+        <!--Quarta section-->
+        <section id="endereco">
+            <h1>Interessado em nos visitar?</h1>
+            
+            <!--Imagem e mapa-->
+        <div class="imagem-mapa-container">
+            <section>
+                <div class="image-wrapper">
+                    <img src="imagens/porto_seguro.png" alt="Imagem de Porto Seguro - BA" width="400" height="250">
+                </div>
+                <div class="image-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61230.80484363203!2d-39.
+                            1243845565994!3d-16.428619652384135!2m3!1f0!2f0!3f0!3m2
+                            !1i1024!2i768!4f13.1!3m3!1m2!1s0x73696a94abc86ff%3A0x677df9529c95e80f!2sPorto%20
+                            Seguro%2C%20State%20of%20Bahia%2C%2045810-000!5e0!3m2!1sen!2sbr!4v1700406157721!5m2!1sen!2sbr"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>    
+            </section>   
+        </div>
+
+        <p id="presencial">Aviso importante:</p>
+        <p id="presencial">Embora nosso evento principal
+        seja online, oferecemos a opção de <span class="encontros">encontros presenciais</span>.</p>  
+        <p id="presencial"> Esses encontros ocorrem todo <span class="sabado">primeiro sábado do mês</span>.</p>
+
+        </section>    
+    </main>
+    <footer>
+        <p class="rodape">@2022 Techish Academy. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
