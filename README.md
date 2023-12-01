@@ -10,7 +10,7 @@ Um site com um tema da minha escolha.
 
 O projeto é estruturado da seguinte forma:
 
--  **`Logo/`**:
+-  **`Logo`**:
 -  **`Menu/`**:
 -  **`Título destacado sobre o assunto do site com a imagem/`**:
 -  **`Trecho de texto com plano de fundo colorido/`**:
